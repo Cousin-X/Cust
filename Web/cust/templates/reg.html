@@ -1,10 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'layout.html' %}
+{% block content %}
+
+    <div class="min-vh-100 d-flex justify-content-center align-items-center py-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-8 col-lg-6 col-xl-4 mx-auto">
+                <div class="card shadow border-0 bg-white">
+                    <div class="card-header bg-white border-bottom p-4 text-center">
+                        <a href="index.html" class="fs-4 text-dark text-decoration-none">
+                           员工注册
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="username2" class="form-label">用户名</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-transparent">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0" id="username2" placeholder="请输入用户名" name="username2" autocomplete="off">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="name2" class="form-label">姓名</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-transparent">
+                        <i class="bi bi-person"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0" id="name2" placeholder="请输入姓名" name="name2" autocomplete="off">
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="phone2" class="form-label">手机号</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-transparent">
+                        <i class="bi bi-phone"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0" id="phone2" placeholder="请输入手机号" name="phone2" autocomplete="off">
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="email2" class="form-label">邮箱</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-transparent">
+                        <i class="bi bi-envelope"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0" id="email2" name="email2" placeholder="请输入邮箱" autocomplete="off">
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="password2" class="form-label">密码</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-transparent">
+                        <i class="bi bi-shield-lock"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0" id="password2" name="password2" placeholder="请输入密码" autocomplete="off">
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="confirm_password" class="form-label">确认密码</label>
+                <div class="input-group"><span class="input-group-text bg-transparent"><i class="bi bi-shield-lock"></i></span>
+                    <input type="text" class="form-control border-start-0" id="confirm_password" name="confirm_password" placeholder="请输入确认密码" autocomplete="off">
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-danger  px-5">注册</button>
+            </div>
+        </form>
+                    </div>
+
+                    <div class="card-footer bg-white">
+                        <div class="text-center p-2 text-muted">
+                            Copyright © 2022 凡人集团 All right reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
